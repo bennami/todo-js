@@ -45,6 +45,8 @@ form button:hover{
     justify-content: center;
     align-items: center;
 
+    width: 80%;
+margin:  3vh auto;
 
 }
 
@@ -59,12 +61,15 @@ form button:hover{
     border: none;
     align-items: center;
     justify-content: space-between;
-
+    transition: all 0.4s ease;
 }
-
+.todo-list{
+    width: 90%;
+}
 .todo li{
     flex: 1;
     transition: all 0.3s ease;
+    background-color: whitesmoke;
 }
 
 .trash-button, .complete-button{
@@ -90,6 +95,11 @@ form button:hover{
 
 .completed{
     text-decoration: line-through;
-    opacity: 0.8;
-
+    opacity: 0.6;
 }
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
