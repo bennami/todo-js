@@ -103,3 +103,43 @@ margin:  3vh auto;
     opacity: 0;
 }
 
+/*select style*/
+
+select{
+   -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.select{
+    margin: 1rem;
+position: relative;
+    overflow: hidden;
+}
+
+select{
+    position: relative;
+    color: rebeccapurple;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: large;
+}
+
+.select::after{
+    position: absolute;
+    content:  "\25BC";
+    top: 0;
+    right: 0;
+    background: rebeccapurple;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all  0.3s ease;
+}
+
+select:hover::after{
+    background: whitesmoke;
+    color: #3e1f5d;
+}
